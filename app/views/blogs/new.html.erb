@@ -1,0 +1,32 @@
+<h1>Create a new Blog man, come on already</h1>
+
+<%= form_for(@blog_post) do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+
+    <div class="field">
+    <%= f.label :author %>
+    <%= f.text_area :author %>
+  </div>
+
+    <div class="field">
+    <%= f.label :subject %>
+    <%= f.text_area :subject %>
+  </div>
+
+    <div class="field">
+    <%= f.label :year %>
+    <%= f.text_area :year %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
