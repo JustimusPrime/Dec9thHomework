@@ -1,2 +1,5 @@
-<h1>Pages#subjects</h1>
-<p>Find me in app/views/pages/subjects.html.erb</p>
+<h1>Subjectives</h1>
+
+<% @posts.each do |blog_post| %>
+  <p><%= link_to blog_post.subject, blog_path(blog_post) %></p>
+<% end %>

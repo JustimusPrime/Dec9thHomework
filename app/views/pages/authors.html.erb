@@ -1,4 +1,6 @@
 <h1>Those who authored</h1>
 
 
-
+<% @posts.each do |blog_post| %>
+  <p><%= blog_post.author %></p>
+<% end %>
